@@ -1,5 +1,5 @@
 const getScoreOfChar = (letter) => {
-  const index = "aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż"
+  const index = "aąbcćdeęfghijklłmnńoóprsśtuwxyzźż"
     .indexOf((letter || '%').toLowerCase());
 
   const score = index + 1;
