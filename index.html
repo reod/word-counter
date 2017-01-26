@@ -1,0 +1,20 @@
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <input type="text" id="sentence" />
+  <p>Score: <span id="score">0</span></p>
+
+  <script src="word-counter.js"></script>
+  <script>
+
+    const $ = document.querySelector.bind(document);
+
+    $('#sentence').addEventListener('keyup', (e) => {
+      $('#score').innerHTML = getScoreOfSentence(e.target.value);
+    });
+
+  </script>
+</html>
