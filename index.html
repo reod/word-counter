@@ -2,10 +2,51 @@
   
   <head>
     <meta charset="UTF-8">
+
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        width: 70%;
+        margin: 100px auto;
+      }
+
+      #sentence {
+        width: 100%;
+        padding: 10px;
+        font-size: 120%;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 10px;
+        text-align: right;
+      }
+    </style>
   </head>
 
-  <input type="text" id="sentence" />
-  <p>Score: <span id="score">0</span></p>
+  <body>
+    <div class="content">
+      <p>Czasami, niektórym śni się matematyka i to z reguły dla śniącego jest koszmar… podobno, bo ja takiego koszmaru nigdy nie miałem.</p>
+
+<p>Dla mnie dość traumatyczna w szkole podstawowej i średniej była ortografia, ale jakoś to zmogłem i też nie miewam koszmarów z tym związanych (:</p>
+<p>Dzisiaj śniła mi się podstawówka, w której wraz z koleżankami i kolegami z klasy brałem udział w olimpiadzie z języka polskiego.</p>
+<p>Mieliśmy bardzo fajne zadanie konkursowe:</p>
+Ułożyć jak najwyżej punktowane zdanie pojedyncze rozwinięte, w którym orzeczenie będzie miało co najmniej 9 liter.
+Punkty za zdanie były liczone na podstawie wag liter. Waga litery była określona pozycją w alfabecie: a-1, ą-2, b-3, c-4 etc…</p>
+<p>Moja drużyna ułożyła takie zdanie:</p>
+<p>„W laboratorium na ulicy Mikołaja Kopernika ekstrahowaliśmy mało skomplikowane związki chemiczne.”
+To zdanie ma 1309 punktów. Niestety obudziłem się za wcześnie i nie wiem, czy wygraliśmy :/</p>
+<p>Kto się podejmie wyzwania?</p>
+    </div>
+    
+  </body>
+  <input type="text" id="sentence" placeholder="Wpisz swoje zdanie, by obliczyć punkty." />
+  <p>Twoje punkty: <strong id="score">0</strong></p>
+
+  <footer>
+    <a href="https://www.facebook.com/piotrekmajchrzak/posts/1423201907699203">oryginalny post</a>,
+    <a href="https://github.com/reod/word-counter">github</a>
+  </footer>
 
   <script src="word-counter.js"></script>
   <script>
